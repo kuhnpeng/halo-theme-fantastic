@@ -18,7 +18,7 @@
                                 <#list menus?sort_by('priority') as menu>
                                     <#if menu.children?? && menu.children?size gt 0>
                                         <div class="navbar-item has-dropdown is-hoverable">
-                                            <a class="sub-menu" href="${menu.url!}">
+                                            <a class="sub-menu">
                                                 ${menu.name!}
                                             </a>
                                             <div class="navbar-dropdown is-boxed">
@@ -32,7 +32,7 @@
                                             </div>
                                         </div>
                                     <#else>
-                                        <a class="navbar-item" href="javascript:void(0)">
+                                        <a class="navbar-item" href="${menu.url}"
                                            target="${menu.target!}">${menu.name}</a>
                                     </#if>
                                 </#list>
