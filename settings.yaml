@@ -1,0 +1,233 @@
+post:
+  label: 文章设置
+  items:
+    share_type:
+      name: share_type
+      label: 文章分享组件
+      type: select
+      default: ''
+      options:
+        - value: ''
+          label: '无'
+        - value: addtoany
+          label: addtoany
+        - value: sharejs
+          label: sharejs
+    donate_alipay:
+      name: donate_alipay
+      label: 支付宝捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    donate_wechat:
+      name: donate_wechat
+      label: 微信捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    mathjax_enable:
+      name: mathjax_enable
+      label: MathJax
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    code_pretty:
+      name: code_pretty
+      label: 文章代码高亮主题
+      type: select
+      default: Default
+      options:
+        - value: Default
+          label: Default
+        - value: Coy
+          label: Coy
+        - value: Dark
+          label: Dark
+        - value: Okaidia
+          label: Okaidia
+        - value: Solarized Light
+          label: Solarized Light
+        - value: Tomorrow Night
+          label: Tomorrow Night
+        - value: Twilight
+          label: Twilight
+social:
+  label: 社交设置
+  items:
+    social_github:
+      name: social_github
+      label: Github
+      type: text
+      placeholder: 'Github 用户名'
+    social_qq:
+      name: social_qq
+      label: QQ
+      type: text
+      placeholder: 'QQ 号'
+    social_weibo:
+      name: social_weibo
+      label: 微博
+      type: text
+      placeholder: '微博用户名'
+    social_twitter:
+      name: social_twitter
+      label: Twitter
+      type: text
+      placeholder: 'Twitter 用户名'
+    social_facebook:
+      name: social_facebook
+      label: Facebook
+      type: text
+      placeholder: 'Facebook 用户名'
+    social_email:
+      name: social_email
+      label: Email
+      type: text
+      placeholder: '邮箱地址'
+    social_telegram:
+      name: social_telegram
+      label: Telegram
+      type: text
+      placeholder: 'Telegram 用户名'
+sidebar:
+  label: 个性化
+  items:
+    sidebar_profile:
+      name: sidebar_profile
+      label: 侧边栏个人资料
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_categories:
+      name: sidebar_categories
+      label: 侧边栏分类
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_tagcloud:
+      name: sidebar_tagcloud
+      label: 侧边栏标签云
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_links:
+      name: sidebar_links
+      label: 侧边栏链接
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_recentpost:
+      name: sidebar_recentpost
+      label: 侧边栏最近文章
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    nav_enable:
+      name: nav_enable
+      label: 是否显示分类导航
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    profile_enable:
+      name: profile_enable
+      label: 是否显示个性签名
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 显示
+        - value: false
+          label: 隐藏
+    tree_menu_enable:
+      name: profile_enable
+      label: 菜单样式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 级联菜单
+        - value: false
+          label: 列表
+
+    sidebar_recentcomment:
+      name: sidebar_recentcomment
+      label: 侧边栏最近评论
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_tags:
+      name: sidebar_tags
+      label: 侧边栏标签
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+custom_links:
+  label: 自定义链接
+  items:
+    links_top:
+      name: links_top
+      label: 顶部链接
+      type: textarea
+      default: '<a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/halo-dev/halo-theme-icarus">
+                    <i class="fab fa-github"></i>
+                </a>'
+    links_footer:
+      name: links_footer
+      label: 底部链接
+      type: textarea
+      default: '<p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        <i class="fab fa-creative-commons title is-4"></i>
+                    </a>
+                </p>
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        <i class="fab fa-creative-commons-by title is-4"></i>
+                    </a>
+                </p>'

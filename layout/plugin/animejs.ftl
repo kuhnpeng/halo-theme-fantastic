@@ -1,0 +1,1 @@
+<script src="${static!}/source/js/animation.js"></script>
