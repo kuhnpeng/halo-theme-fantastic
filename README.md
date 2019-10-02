@@ -1,6 +1,5 @@
-<h1><a href="https://github.com/halo-dev/halo-theme-icarus" target="_blank">halo-theme-icarus</a></h1>
-
-
+## 预览地址
+[访问](https://www.imkun.dev)
 
 ## 预览截图
 ![Screenshot_2019-10-03 知否](https://www.imkun.dev/upload/2019/10/Screenshot_2019-10-03%20%E7%9F%A5%E5%90%A6-67657c9bdcdd4b25aa75c885fc778324.png)
