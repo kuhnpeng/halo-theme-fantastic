@@ -1,5 +1,5 @@
 <#macro navbar layout>
-    <nav class="navbar navbar-main has-background-white is-fixed-top is-paddingless " style="box-shadow: none !important;">
+    <nav class="navbar navbar-main has-background-white is-paddingless " >
         <div class="container ">
             <div class="navbar-brand transparent">
                 <a class="navbar-item navbar-logo" href="${context!}">
@@ -79,6 +79,7 @@
                 burger.classList.toggle('is-active');
                 menu.classList.toggle('is-active');
             });
+
         })();
     </script>
 </#macro>
