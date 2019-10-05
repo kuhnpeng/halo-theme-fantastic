@@ -54,6 +54,8 @@ post:
           label: Tomorrow Night
         - value: Twilight
           label: Twilight
+        - value: light
+          label: light
 social:
   label: 社交设置
   items:

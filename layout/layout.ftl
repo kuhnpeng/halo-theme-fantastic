@@ -73,7 +73,10 @@
         <#if post??>
             <link rel="stylesheet" type="text/css"
                   href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>
+            <link rel="stylesheet" type="text/css"
+                  href="${static!}/source/lib/prism/css/prism-line-numbers.css"/>
             <script type="text/javascript" src="${static!}/source/lib/prism/js/prism.js"></script>
+            <script type="text/javascript" src="${static!}/source/lib/prism/js/prism-line-numbers.js"></script>
         </#if>
         <#if is_index??>
             <link rel="stylesheet" href="${static!}/source/css/widget_pin.css">

@@ -1,0 +1,234 @@
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    font-size: 12px;
+    line-height: 1.8;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    background: #F1F3F3;
+    color: #303030;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background: #E0E0E0;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #E0E0E0;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 0em;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: 4px;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #B0B0B0;
+}
+
+.token.punctuation {
+    color: #303030;
+}
+
+.token.namespace {
+    opacity: .7;
+}
+
+.token.operator,
+.token.boolean,
+.token.number {
+    color: #FD8900;
+}
+
+.token.property {
+    color: #ABA800;
+}
+
+.token.tag {
+    color: #3777E6;
+}
+
+.token.string {
+    color: #1faaaa;
+}
+
+.token.selector {
+    color: #AD00A1;
+}
+
+.token.attr-name {
+    color: #FD8900;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #1faaaa;
+}
+
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit {
+    color: #00C918;
+}
+
+.token.statement,
+.token.regex,
+.token.atrule {
+    color: #1faaaa;
+}
+
+.token.placeholder,
+.token.variable {
+    color: #3777E6;
+}
+
+.token.deleted {
+    text-decoration: line-through;
+}
+
+.token.inserted {
+    border-bottom: 1px dotted #151515;
+    text-decoration: none;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.important {
+    color: #FF0086;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+pre > code.highlight {
+    outline: 0.4em solid #FF0086;
+    outline-offset: .4em;
+}
+
+.line-numbers .line-numbers-rows {
+    border-right-color: #E0E0E0 !important;
+    line-height: 1.8;
+}
+
+.line-numbers-rows > span:before {
+    color: #D0D0D0 !important;
+}
+
+.line-highlight {
+    background: rgba(21, 21, 21, 0.2) !important;
+    background: -webkit-linear-gradient(left, rgba(21, 21, 21, 0.2) 70%, rgba(21, 21, 21, 0)) !important;
+    background: linear-gradient(to right, rgba(21, 21, 21, 0.2) 70%, rgba(21, 21, 21, 0)) !important;
+}
+
+
+div.code-toolbar {
+    position: relative;
+}
+
+div.code-toolbar > .toolbar {
+    position: absolute;
+    top: .3em;
+    right: .2em;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+    opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+    opacity: 1;
+}
+
+div.code-toolbar > .toolbar .toolbar-item {
+    display: inline-block;
+}
+div.code-toolbar > .toolbar .toolbar-item:not(:first-child){
+    margin-left: 10px;
+}
+
+div.code-toolbar > .toolbar a {
+    cursor: pointer;
+}
+
+div.code-toolbar > .toolbar button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar span {
+    font-size: .8em;
+    padding: .5em 1em;
+    background: #f5f2f0;
+    background: rgba(224, 224, 224, 0.2);
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+div.code-toolbar > .toolbar a:not(:first-child),
+div.code-toolbar > .toolbar button:not(:first-child),
+div.code-toolbar > .toolbar span:not(:first-child) {
+    margin-left: 10px;
+}
+
+div.code-toolbar > .toolbar a:hover,
+div.code-toolbar > .toolbar a:focus,
+div.code-toolbar > .toolbar button:hover,
+div.code-toolbar > .toolbar button:focus,
+div.code-toolbar > .toolbar span:hover,
+div.code-toolbar > .toolbar span:focus {
+    color: inherit;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    opacity: 1;
+}
