@@ -8,7 +8,7 @@ body {
   background-color: #f7f7f7;
 }
 .section {
-  padding: 6rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 body,
 button,
@@ -36,7 +36,7 @@ textarea {
 }
 @media screen and (max-width: 768px) {
   .section {
-    padding: 5.5rem 1rem;
+    padding: 4.5rem 1rem;
   }
 }
 @media screen and (min-width: 769px) {
@@ -121,6 +121,21 @@ img.thumbnail {
   content: '\2022';
   position: absolute;
   color: #3273dc;
+}
+@media screen and (max-width: 769px) {
+  .navbar-main {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+    top: 0;
+  }
+  .navbar-main .navbar-item {
+    padding: 0.55rem 0.75rem;
+  }
+  .navbar-main .navbar-item .navbar-dropdown {
+    box-shadow: none;
+  }
 }
 .footer {
   background: #fff;
@@ -361,6 +376,10 @@ img.thumbnail {
 .fas {
   line-height: inherit;
   font-size: 17px;
+}
+.navbar-menu .navbar-end {
+  line-height: inherit;
+  font-size: 14px;
 }
 /* ---------------------------------
  *        Fix content elements
