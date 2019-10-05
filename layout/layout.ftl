@@ -92,13 +92,13 @@
                     <#if settings.share_type !=''>
                         <@module 'share' />
                     </#if>
-                    <div class="column is-8-tablet <#if is_sheet?? || settings.share_type != ''>is-9-desktop<#else>is--desktop</#if> is-8-widescreen is-8-fullhd has-order-2 column-main">
+                    <div class="column is-12-tablet <#if is_sheet?? || settings.share_type != ''>is-9-desktop<#else>is--desktop</#if> is-8-widescreen is-8-fullhd has-order-2 column-main">
                         <#nested />
                     </div>
                     <@widget 'right' />
                 <#else >
                     <#if is_index??>
-                        <div class="column is-8-tablet is-8-desktop is-9-widescreen is-9-fullhd has-order-2 column-main"
+                        <div class="column is-12-tablet is-8-desktop is-9-widescreen is-9-fullhd has-order-2 column-main"
                              style="margin-left: 10px">
                             <div class="columns">
                                 <div class="column is-12-tablet is-12-desktop is-12-widescreen has-order-2 column-main">
@@ -117,7 +117,7 @@
                                     </#if>
                                     <div class="level">
                                         <div class="columns">
-                                            <div class="column is-8-tablet is-12-desktop is-8-widescreen is-8-fullhd has-order-2 column-main">
+                                            <div class="column is-12-tablet is-12-desktop is-8-widescreen is-8-fullhd has-order-2 column-main">
                                                 <#nested />
                                             </div>
                                             <@widget 'right' />
@@ -129,7 +129,7 @@
                         </div>
                         <@widget 'left' />
                     <#else>
-                        <div class="column is-8-tablet is-8-desktop is-6-widescreen is-6-fullhd has-order-2  column-main">
+                        <div class="column is-12-tablet is-8-desktop is-6-widescreen is-6-fullhd has-order-2  column-main">
                             <#nested />
                         </div>
                         <@widget 'left' />
