@@ -16,7 +16,7 @@ body
     background-color: #f7f7f7
 
 .section
-    padding: 2rem 1.5rem
+    padding: 6rem 1.5rem
 
 body, button, input, select, textarea
     font-family: family-sans
@@ -36,7 +36,7 @@ body, button, input, select, textarea
 
 @media screen and (max-width: screen-tablet - 1)
     .section
-        padding: 1.5rem 1rem
+        padding: 5.5rem 1rem
 
 @media screen and (min-width: screen-tablet)
     .column-main,
@@ -104,56 +104,24 @@ img.thumbnail
 
 .navbar-main
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
-    .navbar-menu,
-    .navbar-start,
-    .navbar-end
-        align-items: stretch
-        display: flex
-        padding: 0
-        flex-shrink: 0
-    .navbar-menu
-        flex-grow: 1
-        flex-shrink: 0
-    .navbar-start
-        justify-content: flex-start
-        margin-right: auto
-        font-size:15px
-    .navbar-end
-        justify-content: flex-end
-        margin-left: auto
     .navbar-item
-        display: flex
-        align-items: center
         padding: 1.25rem 0.75rem
         padding-right: 1.5rem
         &.is-active
             color: hsl(217, 71%, 53%)
             background-color: transparent
-        //&.is-active:after
-        //    content: '*';
-        //    position: absolute;
-        //    top: 40px;
-        //    left: 20px;
         .navbar-dropdown
             border-radius: 2px
             box-shadow 0 8px 8px rgba(10,10,10,.1)
             font-weight: 500
         .sub-menu {
             color: #4a4a4a
+            padding-top: 3px;
         }
         .sub-menu:after
             content '\2022'
             position absolute
             color: #3273dc
-
-    @media screen and (max-width: screen-desktop - 1)
-        .navbar-menu
-            justify-content: center
-            box-shadow: none
-        .navbar-start
-            margin-right: 0
-        .navbar-end
-            margin-left: 0
 
 .footer
     background: white

@@ -8,7 +8,7 @@ body {
   background-color: #f7f7f7;
 }
 .section {
-  padding: 2rem 1.5rem;
+  padding: 6rem 1.5rem;
 }
 body,
 button,
@@ -36,7 +36,7 @@ textarea {
 }
 @media screen and (max-width: 768px) {
   .section {
-    padding: 1.5rem 1rem;
+    padding: 5.5rem 1rem;
   }
 }
 @media screen and (min-width: 769px) {
@@ -100,30 +100,7 @@ img.thumbnail {
 .navbar-main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-.navbar-main .navbar-menu,
-.navbar-main .navbar-start,
-.navbar-main .navbar-end {
-  align-items: stretch;
-  display: flex;
-  padding: 0;
-  flex-shrink: 0;
-}
-.navbar-main .navbar-menu {
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-.navbar-main .navbar-start {
-  justify-content: flex-start;
-  margin-right: auto;
-  font-size: 15px;
-}
-.navbar-main .navbar-end {
-  justify-content: flex-end;
-  margin-left: auto;
-}
 .navbar-main .navbar-item {
-  display: flex;
-  align-items: center;
   padding: 1.25rem 0.75rem;
   padding-right: 1.5rem;
 }
@@ -138,23 +115,12 @@ img.thumbnail {
 }
 .navbar-main .navbar-item .sub-menu {
   color: #4a4a4a;
+  padding-top: 3px;
 }
 .navbar-main .navbar-item .sub-menu:after {
   content: '\2022';
   position: absolute;
   color: #3273dc;
-}
-@media screen and (max-width: 1087px) {
-  .navbar-main .navbar-menu {
-    justify-content: center;
-    box-shadow: none;
-  }
-  .navbar-main .navbar-start {
-    margin-right: 0;
-  }
-  .navbar-main .navbar-end {
-    margin-left: 0;
-  }
 }
 .footer {
   background: #fff;
