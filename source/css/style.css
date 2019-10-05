@@ -375,10 +375,6 @@ img.thumbnail {
 .far,
 .fas {
   line-height: inherit;
-  font-size: 17px;
-}
-.navbar-menu .navbar-end {
-  line-height: inherit;
   font-size: 14px;
 }
 /* ---------------------------------
