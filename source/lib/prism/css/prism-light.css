@@ -1,8 +1,16 @@
+code {
+    background-color: #F8F8F8;
+    color: #333333;
+    font-size: .875em;
+    font-weight: 400;
+    padding: .25em .5em .25em;
+    border-radius: 2px;
+}
 code[class*="language-"],
 pre[class*="language-"] {
     font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-    font-size: 12px;
-    line-height: 1.8;
+    font-size: 0.813rem;
+    font-weight: 400;
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -16,6 +24,7 @@ pre[class*="language-"] {
     hyphens: none;
     background: #F1F3F3;
     color: #303030;
+    line-height: 2;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -32,7 +41,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-    padding: 0em;
+    padding: -2em;
     margin: .5em 0;
     overflow: auto;
     border-radius: 4px;
@@ -143,12 +152,11 @@ pre > code.highlight {
 }
 
 .line-numbers .line-numbers-rows {
-    border-right-color: #E0E0E0 !important;
-    line-height: 1.8;
+    background-color:  #E0E0E0 !important;
 }
 
 .line-numbers-rows > span:before {
-    color: #D0D0D0 !important;
+    color: #888 !important;
 }
 
 .line-highlight {
@@ -231,4 +239,13 @@ div.code-toolbar > .toolbar span:focus {
     color: #333333;
     cursor: pointer;
     opacity: 1;
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #888 !important;
+    display: block;
+    padding-right: 0.8em;
+    text-align: center;
+
 }

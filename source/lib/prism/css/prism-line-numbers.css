@@ -12,8 +12,10 @@ pre.line-numbers > code {
 .line-numbers .line-numbers-rows {
     position: absolute;
     pointer-events: none;
-    top: 0.2rem;
+    top: -2rem;
+    padding-top: 2rem;
     font-size: 100%;
+    /*background-color: #EBEDED;*/
     left: -3.8em;
     width: 3em; /* works for line-numbers below 1000 lines */
     letter-spacing: -1px;
@@ -21,6 +23,7 @@ pre.line-numbers > code {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    bottom: -2rem;
 
 }
 
@@ -30,11 +33,4 @@ pre.line-numbers > code {
     counter-increment: linenumber;
 }
 
-.line-numbers-rows > span:before {
-    content: counter(linenumber);
-    color: #788;
-    display: block;
-    padding-right: 0.8em;
-    text-align: right;
-    background-color: #EBEDED;
-}
+
