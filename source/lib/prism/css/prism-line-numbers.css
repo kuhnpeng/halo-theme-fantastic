@@ -12,8 +12,8 @@ pre.line-numbers > code {
 .line-numbers .line-numbers-rows {
     position: absolute;
     pointer-events: none;
-    top: -2rem;
-    padding-top: 2rem;
+    top: -1.8rem;
+    padding-top: 1.6rem;
     font-size: 100%;
     /*background-color: #EBEDED;*/
     left: -3.8em;

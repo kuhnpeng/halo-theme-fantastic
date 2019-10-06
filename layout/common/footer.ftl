@@ -13,7 +13,7 @@
                     &copy; ${.now?string('yyyy')} ${user.nickname!}&nbsp;
                     Powered by <a href="https://halo.run/" target="_blank">Halo</a>
                     <br>
-                    &nbsp;&nbsp;&nbsp;Theme <a href="#">Fantastic</a> by  <a href="https://github.com/imkundev" target="_blank">Quinn</a>
+                    &nbsp;&nbsp;&nbsp;Theme <a href="https://github.com/imkundev/halo-theme-fantastic">Fantastic</a> by  <a href="https://github.com/imkundev" target="_blank">Quinn</a>
                     <br />
                     <@global.footer />
                 </p>

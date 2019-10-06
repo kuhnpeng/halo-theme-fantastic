@@ -44,7 +44,8 @@ pre[class*="language-"] {
     padding: -2em;
     margin: .5em 0;
     overflow: auto;
-    border-radius: 4px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 /* Inline code */

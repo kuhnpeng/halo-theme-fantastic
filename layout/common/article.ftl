@@ -53,7 +53,7 @@
                     </#if>
                 </h1>
             <#else>
-                <h1 class="title is-size-5 is-size-4-mobile has-text-weight-normal">
+                <h1 class="title is-size-5 is-size-5-mobile has-text-weight-normal">
                     <#if index>
                         <a class="has-link-black-ter" href="${context!}/archives/${post.url!}">${post.title!}</a>
                     <#else>
