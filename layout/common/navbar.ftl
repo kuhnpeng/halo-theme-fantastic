@@ -60,9 +60,9 @@
                 </div>
                 <div class="navbar-end">
                     <#--                ${settings.links_top!}-->
-                    <a class="navbar-item search" title="夜间模式" href="javascript:alert('开发中，敬请期待');">
-                        <i class="fas fa-adjust"></i>
-                    </a>
+<#--                    <a class="navbar-item search" title="夜间模式" href="javascript:alert('开发中，敬请期待');">-->
+<#--                        <i class="fas fa-adjust"></i>-->
+<#--                    </a>-->
                     <a class="navbar-item search" title="文章搜索" onclick="openSearchPanel()" href="javascript:;">
                         <i class="fas fa-search"></i>
                     </a>

@@ -530,6 +530,10 @@ figure.highlight .section {
 .gist .file {
   all: initial;
 }
-.post-article {
-  iframe: 400px;
+/* ---------------------------------
+ *        Fix iframe and video
+ * --------------------------------- */
+iframe,
+video {
+  height: none;
 }
