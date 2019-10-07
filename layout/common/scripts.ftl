@@ -1,5 +1,5 @@
-<script src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-
+<#--<script src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>-->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <#include "../plugin/gallery.ftl">
 <#include "../plugin/outdated-browser.ftl">
 <#include "../plugin/mathjax.ftl">
@@ -25,4 +25,6 @@
     if (!urlstatus) {
         $(".navbar-start a").eq(0).addClass('is-active');
     }
+
+
 </script>

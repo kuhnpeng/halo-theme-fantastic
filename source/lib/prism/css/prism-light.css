@@ -43,9 +43,8 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 pre[class*="language-"] {
     padding: -2em;
     margin: .5em 0;
-    overflow: auto;
+    overflow: visible;
     border-radius: 2px;
-    overflow: hidden;
 }
 
 /* Inline code */
