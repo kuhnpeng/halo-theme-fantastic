@@ -24,6 +24,7 @@
                 <#if post??>
                     <#include "../widget/cate_posts.ftl">
                     <#include "../widget/tag_posts.ftl">
+                    <#include "../widget/toc-post.ftl">
                 <#else>
                     <#if settings.sidebar_recentpost!true>
                         <#include "../widget/recent_posts.ftl">
@@ -33,10 +34,9 @@
                     <#include "../widget/recent_comments.ftl">
                 </#if>
             <#--        <#include "../widget/archive.ftl">-->
-                <#if settings.sidebar_tags!true>
-                    <#include "../widget/tag.ftl">
-                </#if>
-
+<#--                <#if settings.sidebar_tags!true>-->
+<#--                    <#include "../widget/tag.ftl">-->
+<#--                </#if>-->
             </#if>
             <#if position == 'left'>
                 <div class="column-right-shadow is-hidden-widescreen is-6-fullhd ">
