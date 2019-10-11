@@ -128,7 +128,7 @@ img.thumbnail {
 }
 .navbar-main .navbar-item .sub-menu {
   color: #4a4a4a;
-  padding-top: 3px;
+  padding: 1rem;
 }
 .navbar-main .navbar-item .sub-menu:after {
   content: '\2022';

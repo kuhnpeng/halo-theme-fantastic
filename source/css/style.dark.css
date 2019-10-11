@@ -73,6 +73,9 @@ img.thumbnail:hover{
 .card .title {
     color: var(--color) !important;
 }
+.navbar-dropdown {
+    background-color: var(--background);    
+}
 .card .content,
 /*.card .title a{*/
 /*    color: var(--cardtitlecolor) !important;*/
@@ -84,7 +87,9 @@ img.thumbnail:hover{
     color: var(--cardcolor);
 }
 
-.navbar-item, .navbar-link {
+.navbar-item, .navbar-link,
+.navbar-main .navbar-item .sub-menu
+{
     color: var(--navbarcolor);
 
 }
