@@ -68,6 +68,7 @@
         <link rel="stylesheet" href="${static!}/source/css/style.css">
         <link rel="stylesheet" href="${static!}/source/css/bundle.css">
         <link rel="stylesheet" href="${static!}/source/css/back-to-top.css">
+        <link rel="stylesheet" href="${static!}/source/css/style.dark.css">
 
         <#if post??>
             <link rel="stylesheet" type="text/css"

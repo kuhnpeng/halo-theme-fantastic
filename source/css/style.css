@@ -4,9 +4,6 @@
 html {
   font-size: 14px;
 }
-body {
-  background-color: #f7f7f7;
-}
 .section {
   padding: 2rem 1.5rem;
 }
@@ -16,6 +13,19 @@ input,
 select,
 textarea {
   font-family: "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif;
+}
+.tag:not(body),
+.button,
+.file-cta,
+.file-name,
+.input,
+.pagination-ellipsis,
+.pagination-link,
+.pagination-next,
+.pagination-previous,
+.select select,
+.textarea {
+  border-radius: 2px;
 }
 @media screen and (min-width: 1280px) {
   .is-1-column .container,
@@ -106,7 +116,6 @@ img.thumbnail {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 .navbar-main .navbar-item {
-  padding: 1.25rem 0.75rem;
   padding-right: 1.5rem;
 }
 .navbar-main .navbar-item.is-active {
@@ -228,6 +237,7 @@ img.thumbnail {
 }
 .article .content a {
   word-wrap: break-word;
+  border-bottom: 0.0625rem dashed #eee;
 }
 .rtl {
   direction: rtl;
@@ -355,9 +365,6 @@ img.thumbnail {
 }
 .has-link-grey {
   color: #7a7a7a !important;
-}
-.has-link-black-ter {
-  color: #242424 !important;
 }
 @media screen and (max-width: 768px) {
   .has-text-centered-mobile {
@@ -535,4 +542,7 @@ figure.highlight .section {
 iframe,
 video {
   height: none;
+}
+.post-content a {
+  border-bottom: 0.0625rem dashed #eee;
 }

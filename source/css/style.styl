@@ -11,15 +11,16 @@ screen-fullhd = 1472px
 html
     font-size: 14px
 
-body
-    background-color: #f7f7f7
+//body
+//    background-color: #f7f7f7
 
 .section
     padding: 2.0rem 1.5rem
 
 body, button, input, select, textarea
     font-family: family-sans
-
+.tag:not(body),.button,.file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea
+    border-radius: 2px
 @media screen and (min-width: screen-widescreen)
     .is-1-column .container
     .is-2-column .container
@@ -108,7 +109,6 @@ img.thumbnail
 .navbar-main
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
     .navbar-item
-        padding: 1.25rem 0.75rem
         padding-right: 1.5rem
         &.is-active
             color: hsl(217, 71%, 53%)
@@ -207,6 +207,7 @@ img.thumbnail
             position: relative
         a
             word-wrap: break-word
+            border-bottom: .0625rem dashed #eee
 
 .rtl
      direction: rtl
@@ -329,8 +330,8 @@ img.thumbnail
 .has-link-grey
     color: hsl(0, 0%, 48%) !important
 
-.has-link-black-ter
-    color: hsl(0, 0%, 14%) !important
+//.has-link-black-ter
+    //color: hsl(0, 0%, 14%) !important
 
 @media screen and (max-width: screen-tablet - 1)
     .has-text-centered-mobile
@@ -496,3 +497,8 @@ figure.highlight
  iframe,
  video
      height: none
+
+.post-content
+    a
+        border-bottom: .0625rem dashed #eee;
+

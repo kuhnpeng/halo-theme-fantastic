@@ -24,7 +24,7 @@
                         <#if r == posts.number+1>
                             <li><a class="pagination-link is-current" href="${context!}/page/${posts.number+1}">${posts.number+1}</a></li>
                         <#else>
-                            <li><a class="pagination-link has-text-black-ter" href="${context!}/page/${r}">${r}</a></li>
+                            <li><a class="pagination-link" href="${context!}/page/${r}">${r}</a></li>
                         </#if>
                     </#list>
                 </ul>

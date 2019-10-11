@@ -3,7 +3,6 @@
   position: relative;
   width: 100%;
   margin: auto;
-  background: #fff;
   padding: 25px;
   border-radius: 2px;
   height: 250px;
@@ -167,7 +166,7 @@
   margin-bottom: 10px;
 }
 .blog-slider__text {
-  color: #4e4a67;
+  /*color: #4e4a67;*/
   margin-bottom: 20px;
   line-height: 1.5em;
 }

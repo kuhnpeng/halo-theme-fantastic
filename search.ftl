@@ -22,7 +22,7 @@
                         <#if r == posts.number+1>
                             <li><a class="pagination-link is-current" href="${context!}/search/page/${posts.number+1}?keyword=${keyword}">${posts.number+1}</a></li>
                         <#else>
-                            <li><a class="pagination-link has-text-black-ter" href="${context!}/search/page/${r}?keyword=${keyword}">${r}</a></li>
+                            <li><a class="pagination-link " href="${context!}/search/page/${r}?keyword=${keyword}">${r}</a></li>
                         </#if>
                     </#list>
                 </ul>

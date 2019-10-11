@@ -1,5 +1,5 @@
 <#macro navbar layout>
-    <nav class="navbar navbar-main has-background-white is-paddingless " >
+    <nav class="navbar navbar-main  is-paddingless " >
         <div class="container ">
             <div class="navbar-brand transparent">
                 <a class="navbar-item navbar-logo" href="${context!}">
