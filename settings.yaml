@@ -5,7 +5,7 @@ post:
       name: share_type
       label: 文章分享组件
       type: select
-      default: ''
+      default: 'sharejs'
       options:
         - value: ''
           label: '无'
@@ -34,16 +34,16 @@ post:
           label: 开启
         - value: false
           label: 关闭
-    code_pretty:
-      name: code_pretty
-      label: 文章代码高亮主题
-      type: select
-      default: light
-      options:
-        - value: Dark
-          label: dark
-        - value: light
-          label: light
+#    code_pretty:
+#      name: code_pretty
+#      label: 文章代码高亮主题
+#      type: select
+#      default: light
+#      options:
+#        - value: Dark
+#          label: dark
+#        - value: light
+#          label: light
 social:
   label: 社交设置
   items:

@@ -72,7 +72,6 @@
         display: inline-block;
         text-align: left;
         width: 260px;
-        margin-left: 330px;
         top: 40px;
     }
 
@@ -83,9 +82,9 @@
         left: 0px;
         bottom: 0;
         width: 3px;
-        background-color: #ebedef;
-        opacity: .5;
+        opacity: .2;
         z-index: 1;
+
     }
 
     #toc li, #toc ul {
@@ -99,10 +98,6 @@
         position: relative;
     }
 
-    .active {
-        color: #1485FE !important;
-        background-color: #ebedef;
-    }
 
     #toc > ul li::before {
         position: relative;
@@ -113,9 +108,8 @@
         height: 7px;
         content: '';
         border-radius: 50%;
-        background-color: #1485FE;
         z-index: 100;
-        opacity: 0.2;
+        opacity: 0.5;
         vertical-align: middle;
     }
 
@@ -140,7 +134,6 @@
     #toc ul li a {
         margin-left: -5px;
         white-space: nowrap;
-        color: #5f5f5f;
         width: 200px;
         padding-left: 15px;
         display: inline-block;
@@ -153,7 +146,6 @@
     #toc ul li ul li a {
         margin-left: -15px;
         white-space: nowrap;
-        color: #5f5f5f;
         width: 200px;
         padding-left: 30px;
         display: inline-block;
@@ -165,7 +157,6 @@
     #toc ul li ul li ul li a {
         display: inline-block;
         margin-left: -15px;
-        color: #5f5f5f;
         padding-left: 35px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -173,10 +164,7 @@
         width: 200px;
     }
 
-    #toc a:hover {
-        color: #1485FE;
-        background-color: #ebedef;
-    }
+
 
     .directory-fixed {
         position: fixed;

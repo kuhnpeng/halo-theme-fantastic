@@ -68,11 +68,13 @@
         <link rel="stylesheet" href="${static!}/source/css/style.css">
         <link rel="stylesheet" href="${static!}/source/css/bundle.css">
         <link rel="stylesheet" href="${static!}/source/css/back-to-top.css">
-        <link rel="stylesheet" href="${static!}/source/css/style.dark.css">
+        <link rel="stylesheet" href="${static!}/source/css/style.theme.css">
 
         <#if post??>
-            <link rel="stylesheet" type="text/css"
-                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>
+<#--            <link rel="stylesheet" type="text/css"-->
+<#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
+                    <link rel="stylesheet" type="text/css"
+                          href="${static!}/source/lib/prism/css/prism.css"/>
             <link rel="stylesheet" type="text/css"
                   href="${static!}/source/lib/prism/css/prism-line-numbers.css"/>
             <script type="text/javascript" src="${static!}/source/lib/prism/js/prism.js"></script>

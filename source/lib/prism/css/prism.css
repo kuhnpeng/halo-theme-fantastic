@@ -7,8 +7,6 @@ https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+j
  */
 
 code {
-	background-color: #403E3E;
-	color: #A2A1A1;
 	font-size: .875em;
 	font-weight: 400;
 	padding: .25em .5em .25em;
@@ -16,7 +14,6 @@ code {
 }
 code[class*="language-"],
 pre[class*="language-"] {
-	color: white;
 	background: none;
 	font-size: 0.813rem;
 	font-weight: 400;
@@ -43,10 +40,7 @@ pre[class*="language-"] {
 	}
 }
 
-pre[class*="language-"],
-:not(pre) > code[class*="language-"] {
-	background: #343232;
-}
+
 
 /* Code blocks */
 pre[class*="language-"] {
@@ -61,16 +55,10 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"] {
 	padding: .15em .2em .05em;
 	border-radius: .3em;
-	border: .13em solid hsl(30, 20%, 40%);
 	white-space: normal;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: hsl(30, 20%, 50%);
-}
+
 
 .token.punctuation {
 	opacity: .7;
@@ -80,43 +68,10 @@ pre[class*="language-"] {
 	opacity: .7;
 }
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol {
-	color: hsl(350, 40%, 70%);
-}
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: hsl(75, 70%, 60%);
-}
 
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-	color: hsl(40, 90%, 60%);
-}
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: hsl(350, 40%, 70%);
-}
 
-.token.regex,
-.token.important {
-	color: #e90;
-}
 
 .token.important,
 .token.bold {
@@ -130,24 +85,7 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-.token.deleted {
-	color: red;
-}
 
-
-.line-numbers .line-numbers-rows {
-	background-color: #403E3E !important;
-}
-
-.line-numbers-rows > span:before {
-	color: #888 !important;
-}
-
-.line-highlight {
-	background: rgba(21, 21, 21, 0.2) !important;
-	background: -webkit-linear-gradient(left, rgba(21, 21, 21, 0.2) 70%, rgba(21, 21, 21, 0)) !important;
-	background: linear-gradient(to right, rgba(21, 21, 21, 0.2) 70%, rgba(21, 21, 21, 0)) !important;
-}
 
 
 div.code-toolbar {
@@ -201,8 +139,6 @@ div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
 	font-size: .8em;
 	padding: .5em 1em;
-	background: #f5f2f0;
-	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
 	border-radius: 2px;
 }
 div.code-toolbar > .toolbar a:not(:first-child),
@@ -219,13 +155,11 @@ div.code-toolbar > .toolbar span:hover,
 div.code-toolbar > .toolbar span:focus {
 	color: inherit;
 	text-decoration: none;
-	color: #333333;
 	cursor: pointer;
 	opacity: 1;
 }
 .line-numbers-rows > span:before {
 	content: counter(linenumber);
-	color: #888;
 	display: block;
 	padding-right: 0.8em;
 	text-align: center;
