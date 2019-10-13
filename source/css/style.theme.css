@@ -5,6 +5,7 @@
     --cardbgcolor: #fff;
     --cardtitlecolor: #333333;
     --navbarcolor: #333333;
+    --navbarbgcolor: rgba(255,255,255,0.7);
     --img-default-filter: none;
     --img-hover-filter: none;
     --btn-bg-color:#f5f5f5;
@@ -46,6 +47,7 @@
         --cardcolor: #333;
         --cardtitlecolor: #333333;
         --navbarcolor: #333333;
+        --navbarbgcolor: rgba(255,255,255,0.7);
         --img-default-filter: none;
         --img-hover-filter: none;
         --link-color: #333;
@@ -84,6 +86,7 @@
         --cardcolor: #bcbcbc;
         --cardtitlecolor: #bcbcbc;
         --navbarcolor: #bcbcbc;
+        --navbarbgcolor: rgba(52,50,50,0.7);
         /*--img-default-filter: grayscale(100%);*/
         img-default-filter: none;
         --img-hover-filter: none;
@@ -361,5 +364,10 @@ div.code-toolbar > .toolbar span:focus {
 }
 
 .navbar-menu {
-    background-color: var(--background);
+    background-color: var(--cardbgcolor);
+}
+body > .navbar {
+    background-color: var(--navbarbgcolor);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
