@@ -145,9 +145,10 @@ img.thumbnail:hover{
 .navbar-dropdown {
     background-color: var(--background);    
 }
-pre {
-    background-color: var(--code-bg-color);
-    color: var(--code-default-color);
+pre,
+blockquote{
+    background-color: var(--code-bg-color) !important;
+    color: var(--code-default-color) !important;
 }
 .card .content,
 /*.card .title a{*/

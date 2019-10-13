@@ -62,7 +62,6 @@
         </#if>
         <link rel="stylesheet"
               href="//cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
-
         <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
 
         <link rel="stylesheet" href="${static!}/source/css/style.css">
