@@ -224,6 +224,7 @@ a.navbar-item:hover {
 
 code {
     color: var(--code-default-color);
+    background-color: var(--code-bg-color)
 }
 code[class*="language-"],
 pre[class*="language-"] {
@@ -325,6 +326,11 @@ div.code-toolbar > .toolbar span:focus {
     color: var(--code-line-numbers-rows-color);
 }
 
+.content table thead td,
+.content table thead th {
+    color: var(--color);
+}
+
 #toc ul li a,
 #toc ul li ul li a,
 #toc ul li ul li ul li a {
@@ -348,4 +354,12 @@ div.code-toolbar > .toolbar span:focus {
 
 .halo-comment .comment-placeholder {
     border: none !important;
+}
+
+.navbar-burger {
+    color: var(--color);
+}
+
+.navbar-menu {
+    background-color: var(--background);
 }
