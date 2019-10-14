@@ -1,99 +1,16 @@
-post:
-  label: 文章设置
+sidebar:
+  label: 个性化
   items:
-    share_type:
-      name: share_type
-      label: 文章分享组件
-      type: select
-      default: 'sharejs'
-      options:
-        - value: ''
-          label: '无'
-        - value: addtoany
-          label: addtoany
-        - value: sharejs
-          label: sharejs
-    donate_alipay:
-      name: donate_alipay
-      label: 支付宝捐赠二维码
-      type: attachment
-      placeholder: '二维码地址'
-    donate_wechat:
-      name: donate_wechat
-      label: 微信捐赠二维码
-      type: attachment
-      placeholder: '二维码地址'
-    mathjax_enable:
-      name: mathjax_enable
-      label: MathJax
+    auto_theme:
+      name: auto_theme
+      label: 主题模式
       type: radio
       data-type: bool
-      default: false
+      default: true
       options:
         - value: true
           label: 开启
         - value: false
-          label: 关闭
-#    code_pretty:
-#      name: code_pretty
-#      label: 文章代码高亮主题
-#      type: select
-#      default: light
-#      options:
-#        - value: Dark
-#          label: dark
-#        - value: light
-#          label: light
-social:
-  label: 社交设置
-  items:
-    social_github:
-      name: social_github
-      label: Github
-      type: text
-      placeholder: 'Github 用户名'
-    social_qq:
-      name: social_qq
-      label: QQ
-      type: text
-      placeholder: 'QQ 号'
-    social_weibo:
-      name: social_weibo
-      label: 微博
-      type: text
-      placeholder: '微博用户名'
-    social_twitter:
-      name: social_twitter
-      label: Twitter
-      type: text
-      placeholder: 'Twitter 用户名'
-    social_facebook:
-      name: social_facebook
-      label: Facebook
-      type: text
-      placeholder: 'Facebook 用户名'
-    social_email:
-      name: social_email
-      label: Email
-      type: text
-      placeholder: '邮箱地址'
-    social_telegram:
-      name: social_telegram
-      label: Telegram
-      type: text
-      placeholder: 'Telegram 用户名'
-sidebar:
-  label: 个性化
-  items:
-    blog_theme:
-      name: blog_theme
-      label: 博客主题
-      type: select
-      default: 'auto'
-      options:
-        - value: 'auto'
-          label: '自动'
-        - value: close
           label: 关闭
     sidebar_profile:
       name: sidebar_profile
@@ -206,6 +123,91 @@ sidebar:
           label: 开启
         - value: false
           label: 关闭
+
+post:
+  label: 文章设置
+  items:
+    share_type:
+      name: share_type
+      label: 文章分享组件
+      type: select
+      default: 'sharejs'
+      options:
+        - value: ''
+          label: '无'
+        - value: addtoany
+          label: addtoany
+        - value: sharejs
+          label: sharejs
+    donate_alipay:
+      name: donate_alipay
+      label: 支付宝捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    donate_wechat:
+      name: donate_wechat
+      label: 微信捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    mathjax_enable:
+      name: mathjax_enable
+      label: MathJax
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+#    code_pretty:
+#      name: code_pretty
+#      label: 文章代码高亮主题
+#      type: select
+#      default: light
+#      options:
+#        - value: Dark
+#          label: dark
+#        - value: light
+#          label: light
+social:
+  label: 社交设置
+  items:
+    social_github:
+      name: social_github
+      label: Github
+      type: text
+      placeholder: 'Github 用户名'
+    social_qq:
+      name: social_qq
+      label: QQ
+      type: text
+      placeholder: 'QQ 号'
+    social_weibo:
+      name: social_weibo
+      label: 微博
+      type: text
+      placeholder: '微博用户名'
+    social_twitter:
+      name: social_twitter
+      label: Twitter
+      type: text
+      placeholder: 'Twitter 用户名'
+    social_facebook:
+      name: social_facebook
+      label: Facebook
+      type: text
+      placeholder: 'Facebook 用户名'
+    social_email:
+      name: social_email
+      label: Email
+      type: text
+      placeholder: '邮箱地址'
+    social_telegram:
+      name: social_telegram
+      label: Telegram
+      type: text
+      placeholder: 'Telegram 用户名'
 
 custom_links:
   label: 自定义链接

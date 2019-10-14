@@ -1,46 +1,42 @@
+
 <style>
     :root {
-        --color: #333;
+        --color: #333333;
         --background: #f7f7f7;
         --cardbgcolor: #fff;
+        --cardcolor: #333;
         --cardtitlecolor: #333333;
         --navbarcolor: #333333;
         --navbarbgcolor: rgba(255, 255, 255, 0.7);
         --img-default-filter: none;
         --img-hover-filter: none;
-        --btn-bg-color: #f5f5f5;
-        --btn-color: #333;
-        --btn-hover-color: #eee;
         --link-color: #1485FE;
         --link-hover-color: #1485FE;
 
-
         /*code highlight*/
-        --code-bg-color: #2c2a2a;
+        --code-bg-color: #F1F3F3;
         --code-default-color: #A2A1A1;
-        --code-line-numbers-bg-color: #403E3E;
+        --code-line-numbers-bg-color: #EBEDED;
         --code-line-numbers-color: #888;
 
-        --code-keyworks-color: #c9c;
+        --code-keyworks-color: #7012cc;
         --code-class-color: #f2777a;
         --code-cdata-color: hsl(313, 67%, 36%);
         --code-symbol-color: hsl(33, 83%, 45%);
         --code-variable-color: hsl(281, 89%, 64%);
         --code-regex-color: #e90;
         --code-deleted-color: red;
-        --code-toolbar-bg-color: #454545;
+        --code-toolbar-bg-color: #EBEDED;
         --code-toolbar-color: #1485FE;
         --code-line-numbers-rows-color: #888;
-
         /*toc*/
         --toc-dot-color: #1485FE;
-        --toc-dot-active-bg-color: #ebedef;
         --toc-dot-active-color: #1485FE;
-        --toc-vertical-line-color: #888;
+        --toc-dot-active-bg-color: #ebedef;
+        --toc-vertical-line-color: #1485FE;
         --toc-item-bg-hover: #1485FE;
-
     }
-    <#if settings.blog_theme =='auto'>
+    <#if settings.auto_theme!true>
     /*light theme*/
     @media (prefers-color-scheme: light) {
         :root {
