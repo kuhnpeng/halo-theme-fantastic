@@ -421,7 +421,7 @@ img.thumbnail {
 }
 .content code,
 .content pre {
-  font-size: 0.85em;
+  font-size: 0.95em;
   font-family: 'Fira Sans', monospace, "Microsoft YaHei";
 }
 .content blockquote footer strong + cite {

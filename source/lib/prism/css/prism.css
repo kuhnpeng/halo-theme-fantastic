@@ -17,8 +17,11 @@ pre[class*="language-"] {
 }
 code[class*="language-"],
 pre[class*="language-"] {
+	font-size: 0.95rem;
+}
+code[class*="language-"],
+pre[class*="language-"] {
 	background: none;
-	font-size: 0.813rem;
 	font-weight: 400;
 	text-align: left;
 	white-space: pre;
