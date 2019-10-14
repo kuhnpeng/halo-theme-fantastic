@@ -237,7 +237,10 @@ img.thumbnail {
 }
 .article .content a {
   word-wrap: break-word;
-  border-bottom: 0.0625rem dashed #eee;
+  border-bottom: 0.125rem dashed #eee;
+}
+.article .content p {
+  line-height: 1.9rem;
 }
 .rtl {
   direction: rtl;

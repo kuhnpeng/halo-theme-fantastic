@@ -11,7 +11,9 @@
     --btn-bg-color:#f5f5f5;
     --btn-color: #333;
     --btn-hover-color: #eee;
-    --link-color: #333;
+    --link-color: #F55852;
+    --link-hover-color: #F55852;
+
 
     /*code highlight*/
     --code-bg-color: #2c2a2a;
@@ -50,7 +52,8 @@
         --navbarbgcolor: rgba(255,255,255,0.7);
         --img-default-filter: none;
         --img-hover-filter: none;
-        --link-color: #333;
+        --link-color: #F55852;
+        --link-hover-color: #F55852;
 
         /*code highlight*/
         --code-bg-color: #F1F3F3;
@@ -93,7 +96,9 @@
         --btn-bg-color:#2c2a2a;
         --btn-color: #bcbcbc;
         --btn-hover-color: #333;
-        --link-color: #bcbcbc;
+        --link-color: #F55852;
+        --link-hover-color: #F55852;
+
         /*code highlight*/
         --code-bg-color: #2c2a2a;
         --code-default-color: #A2A1A1;
@@ -127,6 +132,13 @@ html {
 body > .footer, body > .navbar {
     background-color: var(--cardbgcolor);
     color: var(--cardcolor);
+}
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-hover-color);
+    font-weight: 400;
 }
 
 .card {

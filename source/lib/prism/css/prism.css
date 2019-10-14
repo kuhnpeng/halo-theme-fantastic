@@ -162,6 +162,6 @@ div.code-toolbar > .toolbar span:focus {
 	content: counter(linenumber);
 	display: block;
 	padding-right: 0.8em;
-	text-align: center;
+	text-align: right;
 	/*background-color: #403E3E;*/
 }
