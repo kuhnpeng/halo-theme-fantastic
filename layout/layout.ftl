@@ -99,7 +99,7 @@
                     <@widget 'right' />
                 <#else >
                     <#if is_index??>
-                        <div class="column is-12-tablet is-8-desktop is-9-widescreen is-9-fullhd has-order-2 column-main"
+                        <div class="column is-8-tablet is-8-desktop is-9-widescreen is-9-fullhd has-order-2 column-main"
                              style="margin-left: 10px">
                             <div class="columns">
                                 <div class="column is-12-tablet is-12-desktop is-12-widescreen has-order-2 column-main">
