@@ -85,6 +85,16 @@ social:
 sidebar:
   label: 个性化
   items:
+    blog_theme:
+      name: blog_theme
+      label: 博客主题
+      type: select
+      default: 'auto'
+      options:
+        - value: 'auto'
+          label: '自动'
+        - value: close
+          label: 关闭
     sidebar_profile:
       name: sidebar_profile
       label: 侧边栏个人资料

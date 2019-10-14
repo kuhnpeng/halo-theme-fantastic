@@ -67,8 +67,8 @@
         <link rel="stylesheet" href="${static!}/source/css/style.css">
         <link rel="stylesheet" href="${static!}/source/css/bundle.css">
         <link rel="stylesheet" href="${static!}/source/css/back-to-top.css">
-        <link rel="stylesheet" href="${static!}/source/css/style.theme.css">
-
+<#--        <link rel="stylesheet" href="${static!}/source/css/style.theme.css">-->
+        <#include "./plugin/style.theme.ftl">
         <#if post??>
 <#--            <link rel="stylesheet" type="text/css"-->
 <#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
