@@ -355,9 +355,7 @@ div.code-toolbar > .toolbar span:focus {
     background-color: var(--toc-vertical-line-color);
 }
 
-.halo-comment .comment-placeholder {
-    border: none !important;
-}
+
 
 .navbar-burger {
     color: var(--color);
@@ -371,3 +369,4 @@ body > .navbar {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
+
