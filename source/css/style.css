@@ -125,6 +125,9 @@ img.thumbnail {
 .navbar-main .navbar-item .navbar-dropdown {
   border-radius: 2px;
   box-shadow: 0 8px 8px rgba(10,10,10,0.1);
+  background-color: rgba(52,50,50,0.7);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 .navbar-main .navbar-item .sub-menu {
   color: #4a4a4a;
