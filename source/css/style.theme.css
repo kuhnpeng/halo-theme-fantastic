@@ -29,7 +29,7 @@
     --code-regex-color: #e90;
     --code-deleted-color: red;
     --code-toolbar-bg-color: #454545 ;
-    --code-toolbar-color: #fff;
+    --code-toolbar-color: #1485FE;
     --code-line-numbers-rows-color: #888;
 
     /*toc*/
@@ -69,7 +69,7 @@
         --code-regex-color: #e90;
         --code-deleted-color: red;
         --code-toolbar-bg-color: #EBEDED ;
-        --code-toolbar-color: #276;
+        --code-toolbar-color: #1485FE;
         --code-line-numbers-rows-color: #888;
         /*toc*/
         --toc-dot-color: #1485FE;
@@ -219,6 +219,10 @@ blockquote{
 .tag:not(body) {
     background-color: var(--background) !important;
     color: var(--color) !important;
+}
+.content .tag {
+    background-color: transparent !important;
+    color: var(--code-class-color) !important;
 }
 h1,
 h2,
