@@ -12,6 +12,9 @@ code {
 	padding: .25em .5em .25em;
 	border-radius: 2px;
 }
+pre[class*="language-"] {
+	overflow-y: hidden;
+}
 code[class*="language-"],
 pre[class*="language-"] {
 	background: none;
