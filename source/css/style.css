@@ -12,7 +12,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Noto Sans SC', 'Ubuntu', sans-serif;
+  font-family: 'PingFangSC-Regular', 'Ubuntu', sans-serif;
 }
 .tag:not(body),
 .button,
@@ -125,7 +125,6 @@ img.thumbnail {
 .navbar-main .navbar-item .navbar-dropdown {
   border-radius: 2px;
   box-shadow: 0 8px 8px rgba(10,10,10,0.1);
-  background-color: rgba(52,50,50,0.7);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
