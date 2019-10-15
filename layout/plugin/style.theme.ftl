@@ -10,6 +10,9 @@
         --navbarbgcolor: rgba(255, 255, 255, 0.7);
         --img-default-filter: none;
         --img-hover-filter: none;
+        --btn-bg-color: whitesmoke;
+        --btn-color: #333333;
+        --btn-hover-color: #eeeeee;
         --link-color: #1485FE;
         --link-hover-color: #1485FE;
 
@@ -49,6 +52,9 @@
             --navbarbgcolor: rgba(255, 255, 255, 0.7);
             --img-default-filter: none;
             --img-hover-filter: none;
+            --btn-bg-color: whitesmoke;
+            --btn-color: #333333;
+            --btn-hover-color: #eeeeee;
             --link-color: #1485FE;
             --link-hover-color: #1485FE;
 
@@ -92,7 +98,7 @@
             --img-hover-filter: none;
             --btn-bg-color: #2c2a2a;
             --btn-color: #bcbcbc;
-            --btn-hover-color: #333;
+            --btn-hover-color: #3B3C3E;
             --link-color: #1485FE;
             --link-hover-color: #1485FE;
 
@@ -134,6 +140,9 @@
             --navbarbgcolor: rgba(255, 255, 255, 0.7);
             --img-default-filter: none;
             --img-hover-filter: none;
+            --btn-bg-color: whitesmoke;
+            --btn-color: #333333;
+            --btn-hover-color: #eeeeee;
             --link-color: #1485FE;
             --link-hover-color: #1485FE;
 
