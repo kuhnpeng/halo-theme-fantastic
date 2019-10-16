@@ -67,13 +67,13 @@
         <link rel="stylesheet" href="${static!}/source/css/style.css">
         <link rel="stylesheet" href="${static!}/source/css/bundle.css">
         <link rel="stylesheet" href="${static!}/source/css/back-to-top.css">
-<#--        <link rel="stylesheet" href="${static!}/source/css/style.theme.css">-->
+        <#--        <link rel="stylesheet" href="${static!}/source/css/style.theme.css">-->
         <#include "./plugin/style.theme.ftl">
         <#if post??>
-<#--            <link rel="stylesheet" type="text/css"-->
-<#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
-                    <link rel="stylesheet" type="text/css"
-                          href="${static!}/source/lib/prism/css/prism.css"/>
+        <#--            <link rel="stylesheet" type="text/css"-->
+        <#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
+            <link rel="stylesheet" type="text/css"
+                  href="${static!}/source/lib/prism/css/prism.css"/>
             <link rel="stylesheet" type="text/css"
                   href="${static!}/source/lib/prism/css/prism-line-numbers.css"/>
             <script type="text/javascript" src="${static!}/source/lib/prism/js/prism.js"></script>
@@ -86,60 +86,68 @@
     </head>
     <body class="is-3-column">
     <@navbar 'page' />
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <#if post?? >
-                    <#if settings.share_type !=''>
-                        <@module 'share' />
-                    </#if>
-                    <div class="column is-12-tablet <#if is_sheet?? || settings.share_type != ''>is-9-desktop<#else>is--desktop</#if> is-8-widescreen is-8-fullhd has-order-2 column-main">
-                        <#nested />
-                    </div>
-                    <@widget 'right' />
-                <#else >
-                    <#if is_index??>
-                        <div class="column is-8-tablet is-8-desktop is-9-widescreen is-9-fullhd has-order-2 column-main"
-                             style="margin-left: 10px">
-                            <div class="columns">
-                                <div class="column is-12-tablet is-12-desktop is-12-widescreen has-order-2 column-main">
-                                    <#--         判断是否已经有置顶文章-->
-                                    <#list posts.content as post>
-                                        <#if post.topPriority == 1>
-                                            <#assign isTop = 'yes'>
-                                            <#break>
-                                        </#if>
-                                    </#list>
-                                    <#if isTop??>
-                                        <div class="level">
-                                            <#--                                        <#include "./common/widget_pin.ftl">-->
-                                            <@module 'slider' />
-                                        </div>
-                                    </#if>
-                                    <div class="level">
-                                        <div class="columns">
-                                            <div class="column is-12-tablet is-12-desktop is-8-widescreen is-8-fullhd has-order-2 column-main">
-                                                <#nested />
+    <div class="card-normal">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <#if post?? >
+                        <#if is_post??>
+                            <#if settings.share_type !=''>
+                                <@module 'share' />
+                            </#if>
+                            <div class="column is-12-tablet is-8-desktop is-8-widescreen is-8-fullhd has-order-2 column-main">
+                                <#nested />
+                            </div>
+                            <@widget 'right' />
+                        <#elseif is_sheet??>
+                            <div class="column is-12-tablet is-12-desktop is-12-widescreen is-12-fullhd has-order-2 column-main">
+                                <#nested />
+                            </div>
+                        </#if>
+                    <#else >
+                        <#if is_index??>
+                            <div class="column is-8-tablet is-8-desktop is-9-widescreen is-9-fullhd has-order-2 column-main"
+                                 style="margin-left: 10px">
+                                <div class="columns">
+                                    <div class="column is-12-tablet is-12-desktop is-12-widescreen has-order-2 column-main">
+                                        <#--         判断是否已经有置顶文章-->
+                                        <#list posts.content as post>
+                                            <#if post.topPriority == 1>
+                                                <#assign isTop = 'yes'>
+                                                <#break>
+                                            </#if>
+                                        </#list>
+                                        <#if isTop??>
+                                            <div class="level">
+                                                <#--                                        <#include "./common/widget_pin.ftl">-->
+                                                <@module 'slider' />
                                             </div>
-                                            <@widget 'right' />
+                                        </#if>
+                                        <div class="level">
+                                            <div class="columns">
+                                                <div class="column is-12-tablet is-12-desktop is-8-widescreen is-8-fullhd has-order-2 column-main">
+                                                    <#nested />
+                                                </div>
+                                                <@widget 'right' />
+                                            </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <@widget 'left' />
-                    <#else>
-                        <div class="column is-12-tablet is-8-desktop is-6-widescreen is-6-fullhd has-order-2  column-main">
-                            <#nested />
-                        </div>
-                        <@widget 'left' />
-                        <@widget 'right' />
+                            <@widget 'left' />
+                        <#else>
+                            <div class="column is-12-tablet is-8-desktop is-6-widescreen is-6-fullhd has-order-2  column-main">
+                                <#nested />
+                            </div>
+                            <@widget 'left' />
+                            <@widget 'right' />
+                        </#if>
                     </#if>
-                </#if>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <#include "common/footer.ftl">
     <#include "common/scripts.ftl">
     <#include "search/local.ftl">

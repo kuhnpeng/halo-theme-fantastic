@@ -65,33 +65,39 @@ body, button, input, select, textarea
     border-radius: 2px
     //box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05)
-    display: flex;
-    & + .card,
-    & + .column-right-shadow
-        margin-top: 1.5rem
-    &.card-transparent
-        box-shadow: none
-        background: transparent
-    .card-image
-        //overflow: hidden
-        border-top-left-radius: 4px
-        border-top-right-radius: 4px
-        flex: 8
-        img
-            //height: 80%
-            max-height 150px
-            top: 50%
-            transform: translateX(-5%) translateY(-50%)
-            position: relative
-            border-radius: 2px
-            box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .2)
-    .card-content
-        flex: 12
-        padding: 1rem
+
 @media screen and (max-width: screen-tablet)
     .card-image
         img
             height: 80% !important
+
+ .card-normal
+    .card
+        border-radius: 2px
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05)
+        display: flex;
+        & + .card,
+        & + .column-right-shadow
+            margin-top: 1.5rem
+        &.card-transparent
+            box-shadow: none
+            background: transparent
+        .card-image
+            //overflow: hidden
+            border-top-left-radius: 4px
+            border-top-right-radius: 4px
+            flex: 8
+            img
+                //height: 80%
+                max-height 150px
+                top: 50%
+                transform: translateX(-5%) translateY(-50%)
+                position: relative
+                border-radius: 2px
+                box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .2)
+        .card-content
+            flex: 12
+            padding: 1rem
 
 
 img.thumbnail

@@ -27,14 +27,11 @@
 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
     <#include "layout/plugin/style.theme.ftl">
 
 
     <link rel="stylesheet"
           href="//cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
-
-    <#--    <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>-->
 
     <link rel="stylesheet" href="${static!}/source/css/style.css">
     <link rel="stylesheet" href="${static!}/source/css/bundle.css">
@@ -44,24 +41,37 @@
 <body class="is-3-column">
 <@navbar 'page' />
 <section class="section photos">
-    <div class="container" id="aniimated-thumbnials">
-        <@photoTag method="listTeams">
-            <#list teams as item>
-                <h3 class="level title is-3">${item.team}</h3>
-                <div class="columns
-        is-mobile is-4-tablet is-1-desktop is-1-widescreen is-6-fullhd
-         columns is-mobile is-multiline " >
-                    <#list item.photos as photo>
-                        <div class="column is-one-quarter aniimated-thumbnials">
-                            <a href="${photo.url}" class="show">
-                                <img src="${photo.thumbnail}" alt="">
-                            </a>
+    <@photoTag method="listTeams">
+        <#list teams as item>
+            <h3 class="level title is-3">${item.team}</h3>
+            <div class="columns is-multiline"  id="view_${item.team}">
+                <#list item.photos as photo>
+                    <div class="column is-one-quarter-desktop is-half-tablet">
+                        <div class="card" style="height: 100%">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <a href="${photo.url}" class="show" >
+                                        <img src="${photo.thumbnail}" alt="" >
+                                    </a>
+                                </figure>
+<#--                                <div class="card-content is-overlay is-clipped">-->
+<#--                                    <span class="tag is-info">-->
+<#--                                    ${photo.name}-->
+<#--                                    </span>-->
+<#--                                </div>-->
+                            </div>
+<#--                            <footer class="card-footer">-->
+<#--                                <a class="card-footer-item">-->
+<#--                                    ${photo.name}-->
+<#--                                </a>-->
+<#--                            </footer>-->
                         </div>
-                    </#list>
-                </div>
-            </#list>
-        </@photoTag>
-    </div>
+                    </div>
+                </#list>
+            </div>
+        </#list>
+
+    </@photoTag>
 </section>
 <#include "./layout/common/footer.ftl">
 <#include "./layout/plugin/back-to-top.ftl">
@@ -71,42 +81,62 @@
 <script src="${static!}/source/lib/lg/js/lg-thumbnail.min.js"></script>
 <script src="${static!}/source/lib/lg/js/lg-fullscreen.min.js"></script>
 <script>
-    var lg = document.getElementById('aniimated-thumbnials');
-    lightGallery(lg, {
-        mode: 'lg-slide',
-        cssEasing: 'ease',
-        speed: 500,
-        thumbnail: true,
-        animateThumb: true,
-        showThumbByDefault: true,
-        autoplay: true,
-        progressBar: true,
-        selector: '.show'
-    });
+    var views = []
+    <@photoTag method="listTeams">
+    <#list teams as item>
+        views.push('view_${item.team}')
+    </#list>
+    </@photoTag>
+    views.forEach(function (value) {
+        var lg = document.getElementById((value));
+        lightGallery(document.getElementById((value)), {
+            mode: 'lg-slide',
+            cssEasing: 'ease',
+            speed: 500,
+            thumbnail: true,
+            animateThumb: true,
+            showThumbByDefault: true,
+            autoplay: true,
+            progressBar: true,
+            selector: '.show'
+        });
+    })
+
 </script>
 <style>
-    #aniimated-thumbnials a {
-        display: block;
-        padding: 1rem;
-        border-radius: 2px;
+    .card {
+        height: 100%;
     }
-
-    #aniimated-thumbnials a {
+    .card-image {
         height: 100%;
     }
 
-    #aniimated-thumbnials a:hover img {
+    .image {
+        height: 100%;
+        padding: 5px;
+    }
+    .image img{
+        height: 100%;
+    }
+    #animated-thumbnail a {
+        display: block;
+        padding: 5px;
+        border-radius: 2px;
+    }
+
+    #animated-thumbnail a {
+        height: 100%;
+    }
+
+    #animated-thumbnail a:hover img {
         transform: scale(1.01);
     }
 
-    #aniimated-thumbnials a img {
+    #animated-thumbnail a img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 2px;
-    }
-    .photos .container  {
-        padding: 1rem;
     }
 </style>
 </html>
