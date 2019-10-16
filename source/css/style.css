@@ -85,7 +85,7 @@ textarea {
   flex: 8;
 }
 .card .card-image img {
-  max-height: 150px;
+  max-height: 180px;
   top: 50%;
   transform: translateX(-5%) translateY(-50%);
   position: relative;
