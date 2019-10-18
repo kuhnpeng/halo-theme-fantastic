@@ -1,7 +1,7 @@
 <#macro article post,layout,commentType,index>
     <#include "../comment/comment.ftl">
 <#--    <div class="card" <#if is_post??><#else>style="margin-left: 10px;"</#if>>-->
-    <div class="card">
+    <div class="card" <#if is_post??>style="display: flex"</#if> >
         <#if is_post?? || is_page?? || is_sheet??>
         <#else >
             <#if post.thumbnail?? && post.thumbnail!=''>
