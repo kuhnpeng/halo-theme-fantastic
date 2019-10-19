@@ -165,6 +165,8 @@
   /*color: #0d0925;*/
   margin-bottom: 10px;
 }
+.blog-slider__title a{
+}
 .blog-slider__text {
   /*color: #4e4a67;*/
   margin-bottom: 20px;
@@ -205,15 +207,21 @@
   transform: translateY(-50%);
 }
 @media screen and (max-width: 768px) {
+  .blog-slider__title {
+    /*white-space:nowrap;*/
+    /*overflow:hidden;*/
+    /*text-overflow:ellipsis; /这里的ellipsis的英文名字就是省略的意思/*/
+  }
   .blog-slider__pagination {
     transform: translateX(-50%);
     left: 50% !important;
-    top: 205px;
+    top: 190px;
     width: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
 }
 .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 8px 0;
