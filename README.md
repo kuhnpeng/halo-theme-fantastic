@@ -5,8 +5,8 @@
     - [x] 基本适配(可用)
     - [ ] 细节优化
 
-
-
+## 修改了什么
+ 参见： [](https://github.com/imkundev/halo-theme-fantastic/blob/master/CHANGELOG.md)
 ## 预览地址
 [访问](https://www.imkun.dev)
 
