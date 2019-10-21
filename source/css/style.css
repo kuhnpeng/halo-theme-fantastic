@@ -3,6 +3,7 @@
  * --------------------------------- */
 html {
   font-size: 14px;
+  overflow: -moz-hidden-unscrollable;
 }
 .section {
   padding: 2rem 1.5rem;

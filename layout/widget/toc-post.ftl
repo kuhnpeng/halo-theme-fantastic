@@ -56,7 +56,6 @@
 <style>
     #toc {
         /*position: fixed;*/
-        z-index: -1;
         /*left: 44%;*/
         display: inline-block;
         text-align: left;

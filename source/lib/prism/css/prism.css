@@ -52,9 +52,10 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	padding: 2em;
 	margin: .5em 0;
-	overflow: auto;
 	border-radius: 2px;
 	line-height: 2;
+	overflow-y: hidden;
+
 }
 
 /* Inline code */

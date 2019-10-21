@@ -483,4 +483,8 @@
     footer .button {
         background-color: var(--cardbgcolor) !important;
     }
+
+    .has-text-black-ter {
+       color: var(--color) !important;
+    }
 </style>
