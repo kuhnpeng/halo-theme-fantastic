@@ -17,7 +17,7 @@ pre.line-numbers > code {
     font-size: 100%;
     /*background-color: #EBEDED;*/
     left: -3.8em;
-    width: 3em; /* works for line-numbers below 1000 lines */
+    width: 2.6em; /* works for line-numbers below 1000 lines */
     letter-spacing: -1px;
     -webkit-user-select: none;
     -moz-user-select: none;
