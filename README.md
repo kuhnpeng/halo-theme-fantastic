@@ -9,7 +9,8 @@
  参见： [CHANGELOG](https://github.com/imkundev/halo-theme-fantastic/blob/master/CHANGELOG.md)
 ## 预览地址
 [访问](https://www.imkun.dev)
-
+## 使用前必看
+[Fantastic 主题使用指南](https://www.imkun.dev/archives/Fantastic%20主题使用指南)
 ## 预览截图
 ![Screenshot_20191019 知否1.png](https://www.imkun.dev/upload/2019/10/Screenshot_2019-10-19%20%E7%9F%A5%E5%90%A6(1)-6ab44dfe61584f40aa80eee0f4e8b03c.png)
 
