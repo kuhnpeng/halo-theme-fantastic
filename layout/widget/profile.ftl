@@ -3,7 +3,7 @@
         <nav class="level">
             <div class="level-item has-text-centered" style="flex-shrink: 1">
                 <div class="level">
-                    <figure class="image is-64x64 has-mb-6 level-left">
+                    <figure class="image is-64x64 has-mb-6 level-left" style="margin: 0 auto">
                         <img class="is-rounded"
                              src="${user.avatar!}" alt="${user.nickname!}" style="padding: 2px;
 box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);">
@@ -11,10 +11,10 @@ box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);">
                     <#if settings.profile_enable!true>
                         <div class="level-right">
                             <div>
-                                <p class="title is-3">
+                                <p class="title is-3" style="text-align: center">
                                     ${user.nickname!}
                                 </p>
-                                <p class="is-size-5 is-block" style="padding-left: 1em;">
+                                <p class="is-size-5 is-block" style="padding-left: 1em;text-align: center">
                                     ${user.description!}
                                 </p>
                             </div>
