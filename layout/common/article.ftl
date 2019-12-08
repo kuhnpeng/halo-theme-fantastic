@@ -18,7 +18,7 @@
                 </div>
             </#if>
         </#if>
-        <div class="card-content article " style="width: 100%">
+        <div class="card-content article " id="card-content" style="width: 100%">
             <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
                 <div class="level-left">
                     <time class="level-item has-text-grey"
@@ -63,7 +63,7 @@
             </#if>
 
 
-            <div class="content <#if is_post?? || is_sheet??>post-article<#else>is-hidden-touch</#if>">
+            <div id="<#if is_post??>post-article<#else>is-hidden-touch</#if>" class="content <#if is_post?? || is_sheet??>post-article<#else>is-hidden-touch</#if>">
                 <#if index && post.summary?? && post.summary!=''>
                     ${post.summary!}
                 <#else>

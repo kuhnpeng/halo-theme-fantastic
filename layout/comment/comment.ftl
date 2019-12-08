@@ -8,5 +8,8 @@
         .halo-comment .comment-placeholder {
             border: none !important;
         }
+        .comment-item-content img {
+            width: 100%;
+        }
     </style>
 </#macro>

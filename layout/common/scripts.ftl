@@ -10,6 +10,17 @@
 <#if is_index??>
     <script src="${static!}/source/js/widget_pin.js"></script>
 </#if>
+<#if is_post??>
+
+    <script src="${static!}/source/lib/toc/toc.min.js"></script>
+    <script>
+        new Toc({
+            wrapperId: 'post-article',
+            insertId: 'toc',
+            showSerial: true
+        }).createToc();
+    </script>
+</#if>
 
 <script>
     var url = location.href;

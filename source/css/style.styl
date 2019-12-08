@@ -217,9 +217,12 @@ img.thumbnail
             position: relative
         a
             word-wrap: break-word
-            border-bottom: .0625rem dashed #eee
+            //border-bottom: .0625rem dashed #1abc9c
         p
           line-height 1.9rem
+    blockquote
+        border-left: .4rem solid #4b8af3
+        background-color: #e9f5fe
 
 .rtl
      direction: rtl
@@ -510,7 +513,54 @@ figure.highlight
  video
      height: none
 
-.post-content
-    a
-        border-bottom: .0625rem dashed #eee;
+.post-article
+    word-wrap: break-word;
+    line-height: 1.8;
+    letter-spacing: 0.013rem;
+    //a
+    //    border-bottom: .0625rem dashed #eee;
+    a {
+        position: relative;
+        white-space: normal;
+        color: #4b8af3;
+        background: transparent;
+        text-decoration: none;
+        font-weight: 500;
+        word-break: break-all;
+    }
+    a::after {
+          position: absolute;
+          bottom: -0.2rem;
+          left: 100%;
+          width: 0;
+          border-bottom: 0.13rem solid #4b8af3;
+          content: "";
+          -webkit-transition: width 350ms,left 350ms;
+          -moz-transition: width 350ms,left 350ms;
+          -ms-transition: width 350ms,left 350ms;
+          -o-transition: width 350ms,left 350ms;
+          transition: width 350ms,left 350ms;
+    }
+    a:hover::after {
+        left: 0;
+        width: 100%;
+        -webkit-transition: width 350ms;
+        -moz-transition: width 350ms;
+        -ms-transition: width 350ms;
+        -o-transition: width 350ms;
+        transition: width 350ms;    }
+    p {
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+        text-align: justify;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
 
+.comment-item-content
+    p
+        img
+            width: 100%
