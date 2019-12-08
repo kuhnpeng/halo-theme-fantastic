@@ -130,7 +130,9 @@
                                                         <li class="is-active"><a>全部</a></li>
                                                         <@categoryTag method="list">
                                                             <#list categories as category>
-                                                                <li><a href="${context!}/categories/${category.slugName!}" style="text-transform:capitalize">${category.name}</a></li>
+                                                                <#if category_index <= 4>
+                                                                    <li><a href="${context!}/categories/${category.slugName!}" style="text-transform:capitalize">${category.name}</a></li>
+                                                                </#if>
                                                             </#list>
                                                         </@categoryTag>
                                                     </ul>
