@@ -123,6 +123,20 @@
                                                 <@module 'slider' />
                                             </div>
                                         </#if>
+                                        <div class="level is-medium">
+                                            <div class="ceta">
+                                                <div class="tabs" style="overflow: hidden">
+                                                    <ul style="overflow: hidden;border-bottom-style: none">
+                                                        <li class="is-active"><a>全部</a></li>
+                                                        <@categoryTag method="list">
+                                                            <#list categories as category>
+                                                                <li><a href="${context!}/categories/${category.slugName!}" style="text-transform:capitalize">${category.name}</a></li>
+                                                            </#list>
+                                                        </@categoryTag>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="level">
                                             <div class="columns">
                                                 <div class="column is-12-tablet is-12-desktop is-8-widescreen is-8-fullhd has-order-2 column-main">

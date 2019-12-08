@@ -102,6 +102,10 @@ textarea {
   border-radius: 2px;
   box-shadow: 3px 4px 12px 0 rgba(0,0,0,0.2);
 }
+.card-normal .card:hover .card-image img {
+  -webkit-filter: brightness(0.85);
+  filter: brightness(0.85);
+}
 .card-normal .card .card-content {
   flex: 12;
   padding: 1rem;
@@ -609,4 +613,50 @@ p {
 }
 .comment-item-content img {
   width: 100%;
+}
+.ceta .is-active {
+  border-bottom: #4b8af3 solid 2px;
+  font-weight: 600;
+
+}
+.ceta .tabs a {
+  border-bottom-style: none;
+}
+.ceta .tabs a:hover {
+  color: #4b8af3;
+  font-weight: 500;
+}
+
+.widget .media + .media {
+  margin-bottom: 0
+}
+
+.media+.media {
+  padding-top: 0;
+}
+
+.card .media:not(:last-child) {
+   margin-bottom: 0
+}
+
+.profile .title {
+  line-height: 0.2;
+}
+.profile .level {
+  margin-bottom: 2em;
+}
+.profile .level:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.profile .level:last-child {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.intro {
+  margin-top: 20px;
+}
+.intro i{
+  font-size: 20px;
+  color: #8e8787;
 }
