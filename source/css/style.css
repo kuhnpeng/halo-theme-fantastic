@@ -660,5 +660,5 @@ p {
   color: #8e8787;
 }
 .searchbox .searchbox-result-wrapper {
-  overflow-y: hidden;
+  overflow-y: visible;
 }
