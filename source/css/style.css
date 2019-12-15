@@ -660,3 +660,6 @@ p {
   font-size: 20px;
   color: #8e8787;
 }
+.searchbox .searchbox-result-wrapper {
+  overflow-y: hidden;
+}
