@@ -6,7 +6,7 @@
                     标签云
                 </h3>
                 <#list tags as tag>
-                    <a href="${context!}/tags/${tag.slugName!}" style="font-size:<#if tag.name?length gt 7> ${tag.postCount+(tag.name?length)}<#else>${tag.postCount+(tag.name?length)*2}</#if>px">${tag.name!}</a>
+                    <a href="${tag.fullPath!}" style="font-size:<#if tag.name?length gt 7> ${tag.postCount+(tag.name?length)}<#else>${tag.postCount+(tag.name?length)*2}</#if>px">${tag.name!}</a>
                 </#list>
             </div>
         </div>
