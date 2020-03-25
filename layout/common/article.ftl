@@ -96,7 +96,7 @@
         </div>
     </div>
 
-    <#if !index??>
+    <#if !index>
         <#if (settings.donate_alipay?? && settings.donate_alipay!='') || (settings.donate_wechat?? && settings.donate_wechat!='')>
             <div class="card">
                 <div class="card-content">
@@ -139,7 +139,7 @@
         </div>
     </#if>
 
-    <#if !index>
+    <#if !index && settings.comment_enable?? && settings.comment_enable>
         <div class="card" id="comment-wrapper">
             <div class="card-content">
                 <h3 class="title is-5 has-text-weight-normal">评论</h3>
