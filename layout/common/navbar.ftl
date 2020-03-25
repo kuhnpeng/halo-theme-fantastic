@@ -3,10 +3,10 @@
         <div class="container ">
             <div class="navbar-brand transparent">
                 <a class="navbar-item navbar-logo" href="${context!}">
-                    <#if options.blog_logo?? && options.blog_logo!=''>
-                        <img src="${options.blog_logo!}" alt="${options.blog_title!}" height="28">
+                    <#if blog_logo?? && blog_logo!=''>
+                        <img src="${blog_logo!}" alt="${blog_title!}" height="28">
                     <#else>
-                        ${options.blog_title!}
+                        ${blog_title!}
                     </#if>
                 </a>
                 <span class="navbar-burger burger" data-target="navMenu">

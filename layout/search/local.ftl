@@ -12,7 +12,7 @@
                 <#--                    <header class="ins-section-header">最新文章</header>-->
                 <#--                    <@postTag method="latest" top="5">-->
                 <#--                        <#list posts as post>-->
-                <#--                            <a href="${context!}/archives/${post.url!}">-->
+                <#--                            <a href="${post.fullPath!}">-->
                 <#--                                <div class="ins-selectable ins-search-item">-->
                 <#--                                    <header><i class="fa fa-file"></i><span class="ins-title">${post.title!}</span>-->
                 <#--                                    </header>-->
@@ -28,13 +28,13 @@
                         <div class="columns is-multiline" style="padding: 1.5em 2em">
                             <@categoryTag method="list">
                                 <#list categories as category>
-                                    <a href="${context!}/categories/${category.slugName!}">
+                                    <a href="${category.fullPath!}">
                                         <div class="ant-tag ant-tag-purple is-primary is-focused" style="margin-bottom: 8px;"> ${category.name!}</div>
 <#--                                        <div class="ins-selectable ins-search-item">-->
 <#--                                            <header>-->
 <#--                                                <i class="fa fa-folder"></i>-->
 <#--                                                <span class="ins-title">${category.name!}</span>-->
-<#--                                                <span class="ins-slug">${category.slugName!}</span>-->
+<#--                                                <span class="ins-slug">${category.slug!}</span>-->
 <#--                                            </header>-->
 <#--                                        </div>-->
                                     </a>
@@ -50,7 +50,7 @@
                         <div class="columns is-multiline" style="padding: 1.5em 2em">
                             <@tagTag method="list">
                                 <#list tags as tag>
-                                    <a href="${context!}/tags/${tag.slugName!}">
+                                    <a href="${tag.fullPath!}">
                                         <div class="ant-tag ant-tag-green" style="margin-bottom: 8px;"> ${tag.name!}</div>
 
 <#--                                        <div class="ins-selectable ins-search-item">-->

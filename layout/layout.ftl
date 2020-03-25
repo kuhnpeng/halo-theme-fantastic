@@ -1,4 +1,4 @@
-<#macro layout title,keywords,description,canonical>
+<#macro layout title,canonical>
     <#include "common/navbar.ftl">
     <#include "common/widget.ftl">
     <#include "common/module.ftl">
@@ -9,23 +9,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title>${title!}</title>
 
-        <meta name="keywords" content="${keywords!}"/>
-        <meta name="description" content="${description!}">
+        <meta name="keywords" content="${meta_keywords!}"/>
+        <meta name="description" content="${meta_description!}">
         <meta property="og:type" content="website">
         <meta property="og:title" content="${title!}">
         <meta property="og:url" content="${canonical}">
         <meta property="og:site_name" content="${title!}">
-        <meta property="og:description" content="${description!}">
+        <meta property="og:description" content="${meta_description!}">
         <meta property="og:locale" content="zh">
         <meta property="og:image" content="${user.avatar!}">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="${title!}">
-        <meta name="twitter:description" content="${description!}">
+        <meta name="twitter:description" content="${meta_description!}">
         <meta name="twitter:image" content="${user.avatar!}">
 
         <link rel="canonical" href="${canonical!}"/>
 
-        <link rel="alternative" href="${context!}/atom.xml" title="${options.blog_title!}" type="application/atom+xml">
+        <link rel="alternative" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
 
         <@global.head />
 
@@ -64,23 +64,23 @@
               href="//cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
         <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
 
-        <link rel="stylesheet" href="${static!}/source/css/style.css">
-        <link rel="stylesheet" href="${static!}/source/css/bundle.css">
-        <link rel="stylesheet" href="${static!}/source/css/back-to-top.css">
-        <#--        <link rel="stylesheet" href="${static!}/source/css/style.theme.css">-->
+        <link rel="stylesheet" href="${theme_base!}/source/css/style.css">
+        <link rel="stylesheet" href="${theme_base!}/source/css/bundle.css">
+        <link rel="stylesheet" href="${theme_base!}/source/css/back-to-top.css">
+        <#--        <link rel="stylesheet" href="${theme_base!}/source/css/style.theme.css">-->
         <#include "./plugin/style.theme.ftl">
         <#if post??>
         <#--            <link rel="stylesheet" type="text/css"-->
-        <#--                  href="${static!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
+        <#--                  href="${theme_base!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css"/>-->
             <link rel="stylesheet" type="text/css"
-                  href="${static!}/source/lib/prism/css/prism.css"/>
+                  href="${theme_base!}/source/lib/prism/css/prism.css"/>
             <link rel="stylesheet" type="text/css"
-                  href="${static!}/source/lib/prism/css/prism-line-numbers.css"/>
-            <script type="text/javascript" src="${static!}/source/lib/prism/js/prism.js"></script>
-            <script type="text/javascript" src="${static!}/source/lib/prism/js/prism-line-numbers.js"></script>
+                  href="${theme_base!}/source/lib/prism/css/prism-line-numbers.css"/>
+            <script type="text/javascript" src="${theme_base!}/source/lib/prism/js/prism.js"></script>
+            <script type="text/javascript" src="${theme_base!}/source/lib/prism/js/prism-line-numbers.js"></script>
         </#if>
         <#if is_index??>
-            <link rel="stylesheet" href="${static!}/source/css/widget_pin.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css/widget_pin.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
         </#if>
     </head>
@@ -131,7 +131,7 @@
                                                         <@categoryTag method="list">
                                                             <#list categories as category>
                                                                 <#if category_index <= 4>
-                                                                    <li><a href="${context!}/categories/${category.slugName!}" style="text-transform:capitalize">${category.name}</a></li>
+                                                                    <li><a href="${category.fullPath!}" style="text-transform:capitalize">${category.name}</a></li>
                                                                 </#if>
                                                             </#list>
                                                         </@categoryTag>

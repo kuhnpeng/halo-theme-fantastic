@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>${title!}</title>
 
-    <meta name="keywords" content="${keywords!}"/>
-    <meta name="description" content="${description!}">
+    <meta name="keywords" content="${meta_keywords!}"/>
+    <meta name="description" content="${meta_description!}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="${title!}">
     <meta property="og:site_name" content="${title!}">
-    <meta property="og:description" content="${description!}">
+    <meta property="og:description" content="${meta_description!}">
     <meta property="og:locale" content="zh">
     <meta property="og:image" content="${user.avatar!}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="${title!}">
-    <meta name="twitter:description" content="${description!}">
+    <meta name="twitter:description" content="${meta_description!}">
     <meta name="twitter:image" content="${user.avatar!}">
 
     <link rel="canonical" href="${canonical!}"/>
 
-    <link rel="alternative" href="${context!}/atom.xml" title="${options.blog_title!}" type="application/atom+xml">
+    <link rel="alternative" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
 
     <@global.head />
 
@@ -33,10 +33,10 @@
     <link rel="stylesheet"
           href="//cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
 
-    <link rel="stylesheet" href="${static!}/source/css/style.css">
-    <link rel="stylesheet" href="${static!}/source/css/bundle.css">
-    <link rel="stylesheet" href="${static!}/source/css/back-to-top.css">
-    <link rel="stylesheet" href="${static!}/source/lib/lg/css/lightgallery.css">
+    <link rel="stylesheet" href="${theme_base!}/source/css/style.css">
+    <link rel="stylesheet" href="${theme_base!}/source/css/bundle.css">
+    <link rel="stylesheet" href="${theme_base!}/source/css/back-to-top.css">
+    <link rel="stylesheet" href="${theme_base!}/source/lib/lg/css/lightgallery.css">
 </head>
 <body class="is-3-column">
 <@navbar 'page' />
@@ -77,9 +77,9 @@
 <#include "./layout/plugin/back-to-top.ftl">
 
 </body>
-<script src="${static!}/source/lib/lg/js/lightgallery.min.js"></script>
-<script src="${static!}/source/lib/lg/js/lg-thumbnail.min.js"></script>
-<script src="${static!}/source/lib/lg/js/lg-fullscreen.min.js"></script>
+<script src="${theme_base!}/source/lib/lg/js/lightgallery.min.js"></script>
+<script src="${theme_base!}/source/lib/lg/js/lg-thumbnail.min.js"></script>
+<script src="${theme_base!}/source/lib/lg/js/lg-fullscreen.min.js"></script>
 <script>
     var views = []
     <@photoTag method="listTeams">
