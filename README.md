@@ -19,4 +19,4 @@
 ## 使用方法
 1. 克隆或者[下载](https://codeload.github.com/imkundev/halo-theme-fantastic/zip/master)。
 2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用。
-3. 用Halo自还的程序拉取 `https://github.com/imkundev/halo-theme-fantastic.git`
+3. 用Halo自带的程序拉取 `https://github.com/imkundev/halo-theme-fantastic.git`
