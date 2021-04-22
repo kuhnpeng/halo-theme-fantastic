@@ -11,9 +11,9 @@
                 <#list archive.posts as post>
                     <article class="media">
                         <#if post.thumbnail?? && post.thumbnail!=''>
-                            <a href="${post.thumbnail}" class="media-left">
+                            <a href="${post.fullPath}" class="media-left">
                                 <p class="image is-64x64">
-                                    <img class="thumbnail" src="${post.fullPath!}" alt="${post.title!}">
+                                    <img class="thumbnail" src="${post.thumbnail!}" alt="${post.title!}">
                                 </p>
                             </a>
                         </#if>
